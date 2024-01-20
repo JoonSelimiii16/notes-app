@@ -1,0 +1,8 @@
+<main class="wrapper">
+    <div class="max-h-90  overflow-auto">
+    @for (note of allNotes; track note;let index = $index){
+    <app-dashboard-card [note]="note" [i]="index"></app-dashboard-card>
+    }
+    </div>
+    <button class="primary" [routerLink]="['/new-note']">New Buton</button>
+</main>
